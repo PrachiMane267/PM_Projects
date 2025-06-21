@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #7c7cb3;
+    color: #333;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .navbar .logo h2 {
+    color: white;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hero Section */
+  .hero {
+    height: 100vh;
+    background: url('hero-image.jpg') center center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(4, 6, 19);
+    text-align: center;
+  }
+  
+  .hero-content {
+    background: #cdcedf;
+    padding: 50px;
+    border-radius: 8px;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .cta-btn {
+    padding: 15px 25px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  
+  .cta-btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 60px 20px;
+    background-color: #ddd;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  /* Services Section */
+  .services {
+    padding: 60px 20px;
+    background-color: #6e73a0;
+    text-align: center;
+  }
+  
+  .services h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  
+  .services-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .service-box {
+    background-color: white;
+    padding: 30px;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-box h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .service-box p {
+    font-size: 16px;
+  }
+  
+  /* Contact Section */
+  .contact {
+    padding: 60px 20px;
+    background-color: #ccc;
+    text-align: center;
+  }
+  
+  .contact h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  form button {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  
+  form button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Footer Section */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  

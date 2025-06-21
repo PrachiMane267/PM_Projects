@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Info</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./index.html">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <h2>Amora Inc</h2>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Amora</h1>
+      <p>Innovating the future with cutting-edge technology and services</p>
+      <a href="#services" class="cta-btn">Our Services</a>
+    </div>
+  </section>
+
+  <!-- About Us Section Amora -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>Amora Company is a leader in providing innovative solutions across various industries. With a mission to transform businesses, we deliver high-quality services that are customer-centric and performance-driven.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="services-container">
+      <div class="service-box">
+        <h3>Consulting</h3>
+        <p>We provide expert consulting to optimize business operations and improve efficiency.</p>
+      </div>
+      <div class="service-box">
+        <h3>Development</h3>
+        <p>Our team offers world-class software development services to create solutions that scale.</p>
+      </div>
+      <div class="service-box">
+        <h3>Support</h3>
+        <p>We offer 24/7 customer support to ensure your operations run smoothly without interruptions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="4" placeholder="Enter your message" required></textarea>
+      
+      <button type="submit" id="submit-btn">Submit</button>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Amora Company | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

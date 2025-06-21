@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job Application</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background: #f3f4f6;
+      padding: 2rem;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #1f2937;
+    }
+    label {
+      display: block;
+      margin: 1rem 0 0.5rem;
+      font-weight: 600;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    button {
+      margin-top: 2rem;
+      width: 100%;
+      background: #3b82f6;
+      color: white;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #2563eb;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Job Application Form</h1>
+    <form id="jobForm">
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" name="fullName" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required />
+
+      <label for="position">Position</label>
+      <select id="position" name="position">
+        <option value="frontend">Frontend Developer</option>
+        <option value="backend">Backend Developer</option>
+        <option value="fullstack">Full Stack Developer</option>
+      </select>
+
+      <label for="cover">Cover Letter</label>
+      <textarea id="cover" name="cover" rows="5" placeholder="Tell us why you're a good fit..."></textarea>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+
+  <script>
+    const form = document.getElementById('jobForm');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const data = new FormData(form);
+      alert(`Thank you, ${data.get('fullName')}! Your application has been submitted.`);
+      form.reset();
+    });
+  </script>
+</body>
+</html>
